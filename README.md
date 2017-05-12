@@ -55,8 +55,9 @@ I would pick the Gross conversion and Net conversion as my evaluation metrics, e
 # Measuring Standard Deviation
 List the standard deviation of each of your evaluation metrics. 
 	
-|Gross conversion	|0.0202|
+|Evaluation metrics| standard deviation|
 |------------- | -------------|
+|Gross conversion|0.0202|
 |Net conversion	|0.0156|
 
 Do you expect the analytic estimates to be accurate? That is, for which metrics, if any, would you want to collect an empirical estimate of the variability if you had time?
