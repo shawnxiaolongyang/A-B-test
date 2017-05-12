@@ -54,11 +54,13 @@ I would pick the Gross conversion and Net conversion as my evaluation metrics, e
 
 # Measuring Standard Deviation
 List the standard deviation of each of your evaluation metrics. 
-Gross conversion:	0.0202
-Net conversion:	0.0156
+	Gross conversion:	0.0202
+	Net conversion:		0.0156
+
 Do you expect the analytic estimates to be accurate? That is, for which metrics, if any, would you want to collect an empirical estimate of the variability if you had time?
 To determine whether we should use analytic or empirical variability we compare the unit of diversion to the unit of analysis. If these match, we are confident that the two types of variability will yield similar values.
-	The denominator for both gross and net conversion is cookies therefore is the same as the unit of analysis. The courses learning was a continues process and there should not be too much people revisit and click the ¡°start free trial¡± again, which suggest the analytic variability is close to the empirical one. If we had enough time, collecting more data to test that would be better.
+	
+The denominator for both gross and net conversion is cookies therefore is the same as the unit of analysis. The courses learning was a continues process and there should not be too much people revisit and click the ¡°start free trial¡± again, which suggest the analytic variability is close to the empirical one. If we had enough time, collecting more data to test that would be better.
 	
 # Sizing
 ## Number of Samples vs. Power
