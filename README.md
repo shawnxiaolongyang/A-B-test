@@ -79,11 +79,19 @@ Give your reasoning for the fraction you chose to divert. How risky do you think
 From risky aspect, the experiment would be risky for clients if either could harm someone or collect sensitive information. This experiment did none of above, in other words, it is not risky. 
 From duration aspect, take 50% of traffic would take approximately a month, and client would be fine. If we take less traffic and more days, it might arise problem for duration.
 In this case, I would use the current fraction for experiment.
-Experiment Analysis
+
+# Experiment Analysis
 
 ## Sanity Checks
 For each of your invariant metrics, give the 95% confidence interval for the value you expect to observe, the actual observed value, and whether the metric passes your sanity check. 
 All the invariant metrics passed.
+
+|Evaluation metrics| lower margin| higher margin| observe value|
+|------------- | -------------|-------------|-------------|
+|cookies|0.4988|0.5011|0.5006|
+|clicks|0.4959|0.5041|0.5005|
+|CTR difference|-0.0013|0.0013|-0.0001|
+
 The Number of cookies¡¯ margin is 0.4988 to 0.5011, the observe value is 0.5006.
 The Number of clicks¡¯ margin is 0.4959 to 0.5041, the observe value is 0.5005.
 The CTR rates¡¯ difference margin is -0.0013 to 0.0013, the observe value is -0.0001.
