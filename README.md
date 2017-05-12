@@ -13,6 +13,7 @@ Number of cookies, Number of clicks, Click-through-probability
 
 Gross conversion, Retention, Net conversion
 
+## Explanation
 For each metric, explain both why you did or did not use it as an invariant metric and why you did or did not use it as an evaluation metric. Also, state what results you will look for in your evaluation metrics to launch the experiment.
 
 **Invariant metrics**:
@@ -22,8 +23,11 @@ Number of cookies:
 A good population size metric. Cookies should be independent of the experiment change and should be randomly assigned to each group.
 
 Number of clicks:
+
 A good population size metric. Click is an event, it should be independent of the experiment change and should be randomly assigned to each group.
-	Click-through-probability:
+
+Click-through-probability:
+
 A good invariant metric. It happened before the change triggered and should not be affected by the experiment.
 
 **Evaluation metrics**: 
