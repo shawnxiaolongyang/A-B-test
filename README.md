@@ -4,25 +4,39 @@ A/B test for Udacity
 # Experiment Design
 ## Metric Choice
 List which metrics you will use as invariant metrics and evaluation metrics here. 
-**Invariant metrics**: Number of cookies, Number of clicks, Click-through-probability
-**Evaluation metrics**: Gross conversion, Retention, Net conversion
+
+**Invariant metrics**: 
+
+Number of cookies, Number of clicks, Click-through-probability
+
+**Evaluation metrics**: 
+
+Gross conversion, Retention, Net conversion
 
 For each metric, explain both why you did or did not use it as an invariant metric and why you did or did not use it as an evaluation metric. Also, state what results you will look for in your evaluation metrics to launch the experiment.
+
 **Invariant metrics**:
-**Number of cookies**: 
+
+Number of cookies:
+ 
 A good population size metric. Cookies should be independent of the experiment change and should be randomly assigned to each group.
-**Number of clicks**:
+
+Number of clicks:
 A good population size metric. Click is an event, it should be independent of the experiment change and should be randomly assigned to each group.
 	Click-through-probability:
 A good invariant metric. It happened before the change triggered and should not be affected by the experiment.
+
 **Evaluation metrics**: 
+
 	Gross conversion:
 A good evaluation metric. Since the one of the experiment targets was to find whether change would reduce students with not enough time left the free trail, and the number of cookies complete enrollments divided by the number of clicks would be a good evaluation. The gross conversion should decrease after the change. 
 	Retention:
 A good evaluation metric. Retention has all the characteristics of an evaluation metric. It is normalized by enrollments and measures the probability to pay given enrollment. This normalized probability makes for a ready comparison between experiment and control groups and is the most direct way of answering the second part of our hypothesis. However, if we take retention as evaluate metrics, it need 2,370,010*2 = 4,740,020 samples to get the experiment, if we put all the traffic on the experiment, it need 4,740,020/ 40,000 = 118.5 days. It took too long to get the result and should be rejected. 
 	Net conversion:
 A good evaluation metric. As mention above, the number of cookies made a payment divided by the number of clicks would be a good evaluation for whether change would not significantly reduce the number of students continue past the free trial and eventually complete the course. The net conversion should remain the same after the change. 
+
 **Neither Invariant nor evaluation**:
+
 Number of User ids:
 Not a good invariant metrics. The number of users enrolled in the free trial is dependent on the experiment change. Besides, user ids could be slight different in control and environment group since the target unit of diversion is cookie.
 Not a good evaluation metrics.  The number of user IDs is usable as evaluation metric because it would track the first part of the hypothesis, namely whether we will reduce the number of students to continue past the free trial, but since it isn't normalized, the gross conversion is better choice. In this case, I did not to use it.
@@ -92,15 +106,15 @@ I would take the response time as my follow-up experiment.
 ## Null hypothesis:
 Reduce response time by half from tutor to users would reduce the early cancellation.
 
-Unit of Diversion:
+## Unit of Diversion:
 It should be user-id. The change take place after users enrolled in the courses.
 
-Invariant metrics: 
+## Invariant metrics: 
 User-ids: A good population size metric. It should be independent of the experiment change and should be randomly assigned to each group.
 Click-through-probability: A good invariant metric. It happened before the change triggered and should not be affected by the experiment.
 Gross conversion: A good invariant metric. It happened before the change triggered and should not be affected by the experiment.
 
-Evaluation metrics:
+## Evaluation metrics:
 It should be retention. The change should increase the payment while keep the same enrollment. It would indicate the change is successful.
 
 
